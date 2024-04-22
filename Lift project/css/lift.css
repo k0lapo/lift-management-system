@@ -1,0 +1,196 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(205, 203, 203);
+}
+
+
+.building {
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.floors {
+    display: flex;
+    flex-direction: column;
+}
+
+.floor-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.floor-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ele-btn {
+    background-color: #fff;
+}
+
+.up-btn,
+.down-btn {
+    /* button styles */
+    width: 25px; 
+    height: 25px; 
+    margin-top: 5px; 
+    background-color: #fff;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+    float: left;
+}
+
+/* .up-btn:focus,
+.down-btn:focus {
+    background-color: red;
+} */
+
+.red-bg {
+    background-color: red;
+  }
+  
+
+
+
+.up-btn:hover {
+    background-color: #04AA6D; 
+    color: white;
+}
+
+.down-btn:hover {
+    background-color: #04AA6D; 
+    color: white;
+}
+
+
+.elevator, .elevator2 {
+    width: 100px;
+    height: 60px;
+    background-color: #f10d0d;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: transform 0.5s ease;
+    margin: 5px;
+}
+
+
+
+.elevator-door {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    position: absolute;
+    animation: none;
+}
+
+@keyframes closeDoor {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes openDoor {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+.elevator-display {
+    background-color: #dee2e3;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+
+.floor1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.floor-btn1 {
+    width: 100px;
+    height: 60px;
+    background-color: #04AA6D;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.round-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round, .round2 {
+    margin: 5px; 
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.round-btn:hover {
+    background-color: #04AA6D; 
+    color: white;
+}
+
+.round-btn {
+    color: #000000;
+    cursor: pointer;
+    
+    outline: none;
+    transition-duration: 0.4s;
+}
+
+/* .round-btn:hover {
+    background-color: #3498db;
+    color: white;
+} */
+
+/* .reset-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+} */
+
+.array-box {
+    width: 300px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    border: 2px solid #333; /* Add a border */
+    padding: 10px; /* Add padding inside the box */
+    margin: 10px; /* Center the box horizontally with some margin */
+}
+
+.array-box {
+    display: flex;
+    flex-direction: row; /* Change to 'column' for a vertical layout */
+    justify-content: space-between; /* Distribute elements evenly */
+}
+
+
+.reset-btn:hover {
+    background-color: #0056b3;
+}
